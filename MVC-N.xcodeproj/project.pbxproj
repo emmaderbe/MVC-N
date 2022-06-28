@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		C5B053F8286477940096C535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B053F7286477940096C535 /* AppDelegate.swift */; };
 		C5B053FA286477940096C535 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B053F9286477940096C535 /* SceneDelegate.swift */; };
-		C5B053FC286477940096C535 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B053FB286477940096C535 /* ViewController.swift */; };
 		C5B053FF286477940096C535 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B053FD286477940096C535 /* Main.storyboard */; };
 		C5B054012864779C0096C535 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B054002864779C0096C535 /* Assets.xcassets */; };
 		C5B054042864779C0096C535 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B054022864779C0096C535 /* LaunchScreen.storyboard */; };
+		C5B05413286478470096C535 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B05412286478470096C535 /* NetworkError.swift */; };
+		C5B054152864786C0096C535 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B054142864786C0096C535 /* NetworkService.swift */; };
+		C5B0541B286478D70096C535 /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B0541A286478D70096C535 /* CommentNetworkService.swift */; };
+		C5B0541E286478F90096C535 /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B0541D286478F90096C535 /* GetCommentResponse.swift */; };
+		C5B05420286479090096C535 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B0541F286479090096C535 /* Comment.swift */; };
+		C5B05422286479270096C535 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B05421286479270096C535 /* CommentCell.swift */; };
+		C5B054242864793F0096C535 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B054232864793F0096C535 /* CommentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C5B053F4286477940096C535 /* MVC-N.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-N.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B053F7286477940096C535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5B053F9286477940096C535 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C5B053FB286477940096C535 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5B053FE286477940096C535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5B054002864779C0096C535 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5B054032864779C0096C535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5B054052864779C0096C535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5B05412286478470096C535 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C5B054142864786C0096C535 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C5B0541A286478D70096C535 /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		C5B0541D286478F90096C535 /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
+		C5B0541F286479090096C535 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		C5B05421286479270096C535 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		C5B054232864793F0096C535 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,117 @@
 		C5B053F6286477940096C535 /* MVC-N */ = {
 			isa = PBXGroup;
 			children = (
-				C5B053F7286477940096C535 /* AppDelegate.swift */,
-				C5B053F9286477940096C535 /* SceneDelegate.swift */,
-				C5B053FB286477940096C535 /* ViewController.swift */,
-				C5B053FD286477940096C535 /* Main.storyboard */,
-				C5B054002864779C0096C535 /* Assets.xcassets */,
-				C5B054022864779C0096C535 /* LaunchScreen.storyboard */,
-				C5B054052864779C0096C535 /* Info.plist */,
+				C5B0540B286477A60096C535 /* Application */,
+				C5B0540C286477B10096C535 /* Comments */,
+				C5B0540D286477C00096C535 /* SupportingFiles */,
 			);
 			path = "MVC-N";
+			sourceTree = "<group>";
+		};
+		C5B0540B286477A60096C535 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C5B05411286477FB0096C535 /* NetworkService */,
+				C5B0540E286477DA0096C535 /* Model */,
+				C5B0540F286477E00096C535 /* View */,
+				C5B05410286477E80096C535 /* Controller */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C5B0540C286477B10096C535 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				C5B05419286478930096C535 /* CommentNetworkService */,
+				C5B054182864788E0096C535 /* Model */,
+				C5B05417286478880096C535 /* View */,
+				C5B054162864787D0096C535 /* Controller */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		C5B0540D286477C00096C535 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C5B054002864779C0096C535 /* Assets.xcassets */,
+				C5B054052864779C0096C535 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C5B0540E286477DA0096C535 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5B05412286478470096C535 /* NetworkError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5B0540F286477E00096C535 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5B054022864779C0096C535 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5B05410286477E80096C535 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C5B053F7286477940096C535 /* AppDelegate.swift */,
+				C5B053F9286477940096C535 /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C5B05411286477FB0096C535 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				C5B054142864786C0096C535 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		C5B054162864787D0096C535 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C5B054232864793F0096C535 /* CommentsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C5B05417286478880096C535 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5B053FD286477940096C535 /* Main.storyboard */,
+				C5B05421286479270096C535 /* CommentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C5B054182864788E0096C535 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5B0541C286478DF0096C535 /* Responses */,
+				C5B0541F286479090096C535 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5B05419286478930096C535 /* CommentNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				C5B0541A286478D70096C535 /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworkService;
+			sourceTree = "<group>";
+		};
+		C5B0541C286478DF0096C535 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				C5B0541D286478F90096C535 /* GetCommentResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +252,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B053FC286477940096C535 /* ViewController.swift in Sources */,
+				C5B054152864786C0096C535 /* NetworkService.swift in Sources */,
+				C5B05413286478470096C535 /* NetworkError.swift in Sources */,
+				C5B05420286479090096C535 /* Comment.swift in Sources */,
+				C5B0541E286478F90096C535 /* GetCommentResponse.swift in Sources */,
+				C5B05422286479270096C535 /* CommentCell.swift in Sources */,
 				C5B053F8286477940096C535 /* AppDelegate.swift in Sources */,
+				C5B0541B286478D70096C535 /* CommentNetworkService.swift in Sources */,
+				C5B054242864793F0096C535 /* CommentsViewController.swift in Sources */,
 				C5B053FA286477940096C535 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
